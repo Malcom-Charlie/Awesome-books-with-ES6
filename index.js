@@ -4,7 +4,7 @@ import { DateTime } from './modules/luxon.js';
 
 const dateTimeNow = document.querySelector('.currentTime');
 setInterval(() =>{
-  const current = DateTime.now().toLocaleString(DateTime.DATETIME_MED_WITH_SECONDS);
+  const current = DateTime.now().toLocaleString(DateTime.DATETIME_MED_WITH_WEEKDAY);
   dateTimeNow.textContent = current;
 },1000 );
 
