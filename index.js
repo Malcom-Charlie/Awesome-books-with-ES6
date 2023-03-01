@@ -3,10 +3,10 @@ import './modules/navigation.js';
 import { DateTime } from './modules/luxon.js';
 
 const dateTimeNow = document.querySelector('.currentTime');
-setInterval(() =>{
-  const current = DateTime.now().toLocaleString(DateTime.DATETIME_MED_WITH_SECONDS);
+setInterval(() => {
+  const current = DateTime.now().toLocaleString(DateTime.DATETIME_MED_WITH_WEEKDAY);
   dateTimeNow.textContent = current;
-},1000 );
+}, 1000);
 
 const addButton = document.getElementById('add-btn');
 addButton.addEventListener('click', () => {
